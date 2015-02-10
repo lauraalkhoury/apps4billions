@@ -12,7 +12,7 @@
     <title>Apps4Billions</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
@@ -27,12 +27,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
-<body>
-
+<body data-spy="scroll" data-target="#navbar-scrollspy">
+    <script type="text/javascript">$('body').scrollspy({ target: '.navbar-example' })</script>
     <!-- Navigation -->
+    <div id="navbar-scrollspy">
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -52,7 +52,7 @@
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="http://www.eventbrite.com/e/apps4billions-hackathon-tickets-15566734522">Buy Tickets</a>
+                        <a href="#tickets">Tickets</a>
                     </li>
                     <li>
                         <a href="#schedule">Schedule</a>
@@ -72,6 +72,7 @@
         </div>
         <!-- /.container -->
     </nav>
+    </div>
 
 
     <!-- Header -->
@@ -82,45 +83,50 @@
                     <div class="intro-message">
                         <h1>Apps4Billions</h1><br>
                         <h3>An action-packed weekend event that brings developers, designers, and entrepreneurs together to collaborate on innovative solutions to global challenges.</h3>
-<!--                         <hr class="intro-divider"> -->
-                        <h3><a href="http://www.eventbrite.com/e/apps4billions-hackathon-tickets-15566734522">Buy Tickets</a></h3><br>
                         <hr class="intro-divider">
-                        <!-- TODO: find social media content to add here -->
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                        </ul>
+                        <h3><a href="#about">Tell me more</a></h3>
                     </div>
                 </div>
             </div>
         </div>
         <!-- /.container -->
-
     </div>
     <!-- /.intro-header -->
 
     <!-- Page Content -->
 
-    <a name="about"></a>
+    <section id="about"></a>
+    <div class="content-section-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">What is Apps4Billions?</h2>
+                    <p class="lead">Apps4Billions is Ottawa’s first hackathon dedicated to creating apps for the next billion who will join the Internet. Join us for an action-packed weekend event that brings together developers, designers, and entrepreneurs across the post-secondary institutions and the greater Ottawa community to collaborate on innovative solutions to global challenges. <br><br>
+                    Over the next three years, more than five billion people in the world will own a smart phone or tablet. In many emerging countries, access to mobile Internet translates to better opportunities for education, entrepreneurship, and financial and health-care services. <br></p>
+                    <cite><blockquote>We are big believers that over the next three years or so we are going to see billions of new Internet users come online, thanks to mobile devices such our low cost tablets. All of these users need great and relevant online content.</blockquote>
+                    &mdash; Suneet Tuli, Datawind CEO</cite><br><br>
+                    <p class="lead">So bring your ideas and energy as we hack our way to develop Android-based solutions around the themes of education, healthcare and civic governance. Winners of the hackathon will have the opportunity to have their application preloaded on the Datawind tablets and smartphones, with the potential of millions of downloads.</p>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-b -->
+
+    <section id="tickets"></a>
     <div class="content-section-a">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">What is Apps4Billions?</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in orci porta nibh sollicitudin vestibulum vel vel sapien. Aenean quam odio, eleifend vitae justo quis, efficitur ultricies felis. Phasellus dui mauris, sollicitudin et vehicula id, malesuada eget elit. Donec eget velit tincidunt, congue nibh vel, sagittis tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed quis elit convallis, eleifend felis non, fringilla nunc. Sed quis erat mollis nibh mattis lobortis quis at nibh. Aenean ornare lacus lorem, in eleifend magna condimentum ac.</p>
+                    <h2 class="section-heading">Get Tickets</h2>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ipad.png" alt="">
-                </div>
+                    <!-- EventBrite Widget -->
+                    <div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.com/tickets-external?eid=15566734522&ref=etckt" frameborder="0" height="470px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                        <div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Tickets sales powered by</a> <span style="color:#ddd;"> by </span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite.</a></div>
+                    </div>
             </div>
 
         </div>
@@ -128,14 +134,13 @@
     </div>
     <!-- /.content-section-a -->
 
-    <a name="schedule"></a>
-    <div class="content-section-b">
+    <section id="schedule"></a>
+    <div class="banner">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Schedule</h2>
+                    <h2 class="section-heading">Schedule</h2><br>
                     <p class="lead"><strong>Friday, March 27th</strong><br>
                         5:00 pm – 8:00 pm:  Welcome Address & Forum<br>
                         8:00 pm – 12:00 am: Form teams & Start working<br><br>
@@ -151,7 +156,7 @@
     </div>
     <!-- /.content-section-b -->
 
-    <a name="sponsors"></a>
+    <section id="sponsors"></a>
     <div class="content-section-a">
         <div class="container">
             <div class="row">
@@ -167,57 +172,283 @@
             </div>
         </div>
         <!-- /.container -->
-
     </div>
     <!-- /.content-section-a -->
 
-    <a name="faq"></a>
+    <section id="faq"></a>
     <div class="content-section-b">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                <div class="col-lg-12">
                     <h2 class="section-heading">Frequently Asked Questions</h2>
-                    <p class="lead"><strong>Do I have to be a student to join?</strong><br>
-                        No, professionals are welcome to come too!<br><br>
-                        <strong>Do we get food?</strong><br>
-                        Of course! <br><br>
+                    <div class="panel-group" id="accordion">
+                            <!-- QUESTION 1 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q1">
+                                            What’s a hackathon?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q1" class="panel-collapse collapse">
+                                    <div class="panel-body text-info text-info">
+                                        Hackathons are about coding together to solve real-world problems. Participants will work in teams of up to 4 to 5 people for over a weekend to create a web or mobile application. Hackathons usually last a few days – like a weekend. While working on a particular project, the idea is for each participant to be have the ability and freedom to work on whatever he/she wants.
+                                    </div>
+                                </div>
+                            </div>
 
-                        etc...</p>
+                            <!-- QUESTION 2 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q2">
+                                            Who is behind Apps4Billions?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q2" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        The partners behind this event are the Canada India Centre, 1125@Carleton, hatch, the Carleton University Students’ Association. Along with our supporter Datawind, we are proud to bring the Apps4Billions event, the premier global hackathon empowering global citizens to Ottawa. In 2014, Datawind was named as one of the “50 Smartest Companies” by MIT Technology Review, an annual listing of the world's most innovative companies.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 3 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q3">
+                                            Where and when does the Apps4Billions hackathon take place?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q3" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        The event takes place at 1125@Carleton, located in 5110 Human Computer Interaction Building at the Carleton University campus <a href="https://www.google.ca/maps/place/Carleton+University/@45.387581,-75.69602,17z/">[Google Maps]</a>. It starts on Friday March 27th at 5pm and ends on Sunday March 29th at 7pm. 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 4 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q4">
+                                            What if I don't have any experience?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q4" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        No problem! You'll have so many people to meet, so much to learn and the most of fun to be had. We will have a team of veteran mentors to help you hit the ground running with ideas and guidance, plenty of opportunities to engage other talented and curious individuals like yourself and of course lots of fun events right when you hit that rough patch.  We believe a hackathon does not necessarily have to be restricted to people coding mobile apps and websites but rather a learning and sociable experience for people of all walks in life.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 5 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q5">
+                                            Who can participate?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q5" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        Apps4Billions is open to all students currently enrolled in a college or university as well as professionals in the industry. A cross-section of students and industry folks will increase the networking opportunity and pool of ideas.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 6 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q6">
+                                            Do I need an idea to sign up?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q6" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        No. Coming up with ideas is hard so don't feel discouraged if you don't immediately have the blueprints for the next BIG THING dancing around in your head the second you get here.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 7 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q7">
+                                            Do we sign up as individuals or as a team?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q7" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        You have to sign up as individuals. We will help people find team members and/or form teams, as well as hold an idea generation workshop to help people think of ideas to work on for the hackathon. So you should sign up regardless!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 8 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q8">
+                                            How many people to a project?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q8" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        We’re hoping that pairs of developers work on something — we want to avoid large groups of people coding a single project, so there will be a mix of technical and business expertise within each team.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 9 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q9">
+                                            What should I bring?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q9" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        Laptop, cellphone, chargers.  Sleeping bag, pillow, toiletries and a change of clothes. We will have a Datawind tablet for each team.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 10 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q10">
+                                            Will there be wireless internet access?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q10" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        Yes.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 11 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q11">
+                                            Will there be food?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q11" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        Yes! We'll provide all meals, with vegetarian options. We aim to make the experience as seamless as possible. All you have to worry about is building something!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 12 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q12">
+                                            Who owns my project & IP?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q12" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        Short answer: The team that develops the project is the owner of the project and IP.<br>
+                                        Long answer: Intellectual Property Rights in the entry will remain vested in the entrant or third party who created them, however, you need to be comfortable in disclosing your idea to the Judging Panel and other participants at the Hackathon.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 13 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q13">
+                                            Will there be prizes?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q13" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        Yes, but remember its not only about winning — it’s also about learning and making friends (so everyone’s a winner!). But we’ll also have a panel of professional judges to select the best three apps. The Top Prize is the opportunity to partner with the organizers and Datawind to have your apps preloaded on the Datawind device.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 14 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q14">
+                                            How will the Apps be judged? What is the judgment criterion?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q14" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        Applications will be judged by a panel of judges based on the following criteria:<br>
+                                        a. Relevance – Value addition to the user’s life<br>
+                                        b. Usability – Ease of use/Intuitiveness<br>
+                                        c. Innovation/Creativity – Originality of thought
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 15 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q15">
+                                            How many people to a project?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q15" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        We’re hoping that pairs of developers work on something—we want to avoid large groups of people coding a single project, so there will be a mix of technical and business expertise within each team.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- QUESTION 16 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q16">
+                                              How many people to a project?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="q16" class="panel-collapse collapse">
+                                    <div class="panel-body text-info">
+                                        To be honest, we really don’t want to – for us the more the merrier. But we’ve found that an attendee/RSVP ratio of less than half is quite common. Since we have room for 100 people, that means that we would have to allow over 200 RSVPs to account for all the people who don't show up the day of the event.<br>
+                                        By charging for tickets we ensure that we all have skin in the game and we can keep the attendee/RSVP ratio more predictable. Also, after all, you will be getting good, healthy, quality food, snacks, and drinks.
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- /.container -->
     </div>
     <!-- /.content-section-b -->
-    
-	<!-- <a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Connect to Start Bootstrap:</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div> -->
-        <!-- /.container -->
 
     </div>
     <!-- /.banner -->
@@ -227,8 +458,8 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <ul class="text-center list-inline">
                         <li>
                             <a href="#">Home</a>
                         </li>
@@ -256,7 +487,8 @@
                         <li>
                             <a href="#contact">Contact Us</a>
                         </li>
-                    </ul>
+                    </ul><br>
+                    <p>Made with <span class="glyphicon glyphicon-heart"></span> by <a href="https://twitter.com/laura_alkhoury">Laura Alkhoury</a></p>
                     <p class="copyright text-muted small">Copyright &copy; Apps4Billions 2015. All Rights Reserved.</p>
                 </div>
             </div>

@@ -216,7 +216,7 @@ th {
   pre,
   blockquote {
     border: 1px solid #999;
-
+    width: 5%;
     page-break-inside: avoid;
   }
   thead {
@@ -5306,6 +5306,19 @@ a.list-group-item-danger.active:focus {
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
 }
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
