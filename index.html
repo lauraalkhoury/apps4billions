@@ -161,8 +161,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
                     <h2 class="section-heading">Sponsors</h2>
                     <p class="lead">Sponsor names and logos go here!</p>
                 </div>
@@ -225,7 +223,7 @@
                                 </div>
                                 <div id="q3" class="panel-collapse collapse">
                                     <div class="panel-body text-info">
-                                        The event takes place at 1125@Carleton, located in 5110 Human Computer Interaction Building at the Carleton University campus <a href="https://www.google.ca/maps/place/Carleton+University/@45.387581,-75.69602,17z/">[Google Maps]</a>. It starts on Friday March 27th at 5pm and ends on Sunday March 29th at 7pm. 
+                                        The event takes place at 1125@Carleton, located in 5110 Human Computer Interaction Building at the Carleton University campus <a href="https://www.google.ca/maps/place/Carleton+University/@45.387581,-75.69602,17z/">[map link]</a>. It starts on Friday March 27th at 5pm and ends on Sunday March 29th at 7pm. 
                                     </div>
                                 </div>
                             </div>
@@ -431,7 +429,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#q16">
-                                              How many people to a project?
+                                              Why are you charging for tickets?
                                         </a>
                                     </h4>
                                 </div>
@@ -454,12 +452,11 @@
     <!-- /.banner -->
 
     <!-- Footer -->
-    <!-- TODO: fix footer to match header -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 text-center">
-                    <ul class="text-center list-inline">
+<!--                     <ul class="text-center list-inline">
                         <li>
                             <a href="#">Home</a>
                         </li>
@@ -487,7 +484,7 @@
                         <li>
                             <a href="#contact">Contact Us</a>
                         </li>
-                    </ul><br>
+                    </ul><br> -->
                     <p>Made with <span class="glyphicon glyphicon-heart"></span> by <a href="https://twitter.com/laura_alkhoury">Laura Alkhoury</a></p>
                     <p class="copyright text-muted small">Copyright &copy; Apps4Billions 2015. All Rights Reserved.</p>
                 </div>
@@ -500,6 +497,39 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href*=#q])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
 
 </body>
 
